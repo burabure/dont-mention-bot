@@ -69,8 +69,8 @@ function buildMentionSentence(reviewers) {
   }
 
   return (
-    atReviewers.slice(0, atReviewers.length - 1).join(', ') +
-    ' and ' + atReviewers[atReviewers.length - 1]
+    reviewers.slice(0, reviewers.length - 1).join(', ') +
+    ' and ' + reviewers[reviewers.length - 1]
   );
 }
 
