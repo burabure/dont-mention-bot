@@ -64,10 +64,8 @@ github.authenticate({
 var app = express();
 
 function buildMentionSentence(reviewers) {
-  var atReviewers = reviewers.map(function(owner) { return '@' + owner; });
-
   if (reviewers.length === 1) {
-    return atReviewers[0];
+    return reviewers[0];
   }
 
   return (
